@@ -200,13 +200,4 @@ cd client && npm install && npm start     # http://localhost:3000
 
 **Testing with Postman:** `POST /api/auth/login` → copy `token` → add header `Authorization: Bearer <token>` → call `/api/farms`, `/api/weather`, etc. Wrong/missing token returns 401; farmer calling `/api/admin/*` returns 403.
 
-## 6.2 Demo screenshots
-After running the app, capture and save into `docs/screenshots/`:
-`01-login.png`, `02-dashboard.png`, `03-farm-crops.png`, `04-soil.png`, `05-weather-pests.png`, `06-market.png`, `07-community.png`, `08-admin.png`
-Then they display here:
 
-![Dashboard](docs/screenshots/02-dashboard.png)
-![Admin](docs/screenshots/08-admin.png)
-
-## 6.3 Demo video
-Record a 3–5 minute screen capture (Win+G / OBS) in this order: register → add farm and crop → soil analysis → weather & alerts → add to cart and order → switch to admin and approve the order → switch language. Upload to Google Drive/YouTube and paste the link here: `DEMO_VIDEO_LINK`.
