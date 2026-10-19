@@ -1,0 +1,13 @@
+require('dotenv').config();
+require('express-async-errors');
+const express = require('express'), cors = require('cors'), morgan = require('morgan');
+const { notFound, errorHandler } = require('./middleware/error');
+const app = express();
+app.use(cors({ origin: process.env.CLIENT_URL || 'http://localhost:3000' }));
+app.use(express.json());
+app.use(morgan('dev'));
+app.get('/api/health', (q, s) => s.json({ ok: true }));
+app.use('/api', require('./routes'));
+app.use(notFound);
+app.use(errorHandler);
+module.exports = app;

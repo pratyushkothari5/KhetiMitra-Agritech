@@ -1,0 +1,6 @@
+:root{--g:#2f6b3a;--g2:#d9e8c8;--bg:#f6f1e3}
+body{background:var(--bg);font-family:'Segoe UI',system-ui,sans-serif}
+h1,h2,h3,.brand{font-family:Georgia,'Times New Roman',serif}
+.navbar{background:var(--g)}.btn-primary{background:var(--g);border-color:var(--g)}.btn-primary:hover{background:#245530;border-color:#245530}
+.card{border-radius:18px;border-color:#e3dcc6}.stat{font:700 2.2rem Georgia,serif;color:var(--g)}
+.hero{background:linear-gradient(135deg,var(--g2),#fffdf6);border-radius:22px;padding:24px}
